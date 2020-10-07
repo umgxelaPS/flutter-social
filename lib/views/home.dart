@@ -37,9 +37,9 @@ class _HomePageState extends State<HomePage> {
       elevation: 0.0,
       items: [
         BottomNavigationBarItem(
-          icon: Icon(Icons.rss_feed),
+          icon: Icon(Icons.home),
           title: Text(
-            'Feed',
+            'Inicio',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
@@ -51,9 +51,9 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         BottomNavigationBarItem(
-          icon: Icon(LineIcons.bell),
+          icon: Icon(LineIcons.share_alt_square),
           title: Text(
-            'Notificaciones',
+            'Contenido',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
