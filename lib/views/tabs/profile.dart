@@ -17,9 +17,9 @@ class ProfilePage extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
-          _buildUserStats('VISITORS', '2305'),
-          _buildUserStats('LIKED', '276'),
-          _buildUserStats('MATCHED', '51'),
+          _buildUserStats('VISITAS', '2305'),
+          _buildUserStats('ME GUSTAS', '276'),
+          _buildUserStats('EVENTOS', '15'),
         ],
       ),
     );
@@ -109,11 +109,11 @@ class ProfilePage extends StatelessWidget {
           ),
           child: Column(
             children: <Widget>[
-              _buildIconTile(Icons.favorite, Colors.red, 'Likes'),
+              _buildIconTile(Icons.favorite, Colors.red, 'Me gustas'),
               hr,
-              _buildIconTile(LineIcons.eye, Colors.green, 'Visitors'),
+              _buildIconTile(LineIcons.eye, Colors.green, 'Vistas'),
               hr,
-              _buildIconTile(LineIcons.users, Colors.purpleAccent, 'Groups'),
+              _buildIconTile(LineIcons.users, Colors.purpleAccent, 'Grupos'),
             ],
           ),
         ),
@@ -134,15 +134,15 @@ class ProfilePage extends StatelessWidget {
           ),
           child: Column(
             children: <Widget>[
-              _buildIconTile(LineIcons.money, Colors.red, 'My Wallet'),
+              _buildIconTile(LineIcons.money, Colors.red, 'Mi billetera'),
               hr,
-              _buildIconTile(LineIcons.diamond, Colors.blue, 'VIP Center'),
+              _buildIconTile(LineIcons.diamond, Colors.blue, 'Centro VIP'),
               hr,
-              _buildIconTile(LineIcons.user_plus, Colors.orangeAccent, 'Find Friends'),
+              _buildIconTile(LineIcons.user_plus, Colors.orangeAccent, 'Encotrar amigos'),
               hr,
-              _buildIconTile(LineIcons.user_times, Colors.black, 'Blacklist'),
+              _buildIconTile(LineIcons.user_times, Colors.black, 'Lista negra'),
               hr,
-              _buildIconTile(LineIcons.cogs, Colors.grey.withOpacity(0.6), 'Settings'),
+              _buildIconTile(LineIcons.cogs, Colors.grey.withOpacity(0.6), 'Configuraciones'),
             ],
           ),
         ),

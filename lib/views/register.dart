@@ -38,7 +38,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
     final pageTitle = Container(
       child: Text(
-        "Tell us about you.",
+        "Hablanos de ti.",
         style: TextStyle(
           fontWeight: FontWeight.bold,
           color: Colors.black,
@@ -57,13 +57,13 @@ class _RegisterPageState extends State<RegisterPage> {
         key: _formKey,
         child: Column(
           children: <Widget>[
-            _buildFormField('Name', LineIcons.user),
+            _buildFormField('Nombre', LineIcons.user),
             formFieldSpacing,
-            _buildFormField('Email Address', LineIcons.envelope),
+            _buildFormField('Correo electrónico', LineIcons.envelope),
             formFieldSpacing,
-            _buildFormField('Phone Number', LineIcons.mobile_phone),
+            _buildFormField('Teléfono', LineIcons.mobile_phone),
             formFieldSpacing,
-            _buildFormField('Password', LineIcons.lock),
+            _buildFormField('Contraseña', LineIcons.lock),
             formFieldSpacing,
           ],
         ),
@@ -79,19 +79,19 @@ class _RegisterPageState extends State<RegisterPage> {
             groupValue: _genderRadioBtnVal,
             onChanged: _handleGenderChange,
           ),
-          Text("Male"),
+          Text("Hombre"),
           Radio(
             value: 1,
             groupValue: _genderRadioBtnVal,
             onChanged: _handleGenderChange,
           ),
-          Text("Female"),
+          Text("Mujer"),
           Radio(
             value: 2,
             groupValue: _genderRadioBtnVal,
             onChanged: _handleGenderChange,
           ),
-          Text("Other"),
+          Text("Otro"),
         ],
       ),
     );
@@ -114,7 +114,7 @@ class _RegisterPageState extends State<RegisterPage> {
           child: MaterialButton(
             onPressed: () => Navigator.of(context).pushNamed(homeViewRoute),
             child: Text(
-              'CREATE ACCOUNT',
+              'CREAR CUENTA',
               style: TextStyle(
                 fontWeight: FontWeight.w800,
                 fontSize: 20.0,

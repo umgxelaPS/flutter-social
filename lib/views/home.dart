@@ -53,14 +53,14 @@ class _HomePageState extends State<HomePage> {
         BottomNavigationBarItem(
           icon: Icon(LineIcons.bell),
           title: Text(
-            'Notifications',
+            'Notificaciones',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
         BottomNavigationBarItem(
           icon: Icon(LineIcons.user),
           title: Text(
-            'Profile',
+            'Perfil',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         )

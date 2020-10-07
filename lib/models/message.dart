@@ -6,10 +6,10 @@ class Message {
 }
 
 List<Message> messages = [
-  Message("Hey! How's it going? 😀", false),
-  Message("Great thanks, i am looking forward to meeting you tomorrow 😍", true),
-  Message("Me too. Were you able to reach Frank?", false),
-  Message("Not yet", false),
-  Message("I'm sure he is asleep 😴", false),
-  Message("I was thinking the exact same thing!", true),
+  Message("Hola, ¿cómo estas? 😀", false),
+  Message("Muy bien gracias, me gustaría ir a tu concierto mañana 😍", true),
+  Message("Genial. Podrías pasar por Francisco?", false),
+  Message("Si claro", false),
+  Message("Mangnifico, nos veremos mañana 😴", false),
+  Message("Espero disfruten el concierto!", true),
 ];

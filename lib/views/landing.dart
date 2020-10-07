@@ -13,12 +13,12 @@ class LandingPage extends StatelessWidget {
     );
 
     final logo = Container(
-      height: 100.0,
-      width: 100.0,
+      height: 107.0,
+      width: 400.0,
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AvailableImages.appLogo,
-          fit: BoxFit.cover,
+          fit: BoxFit.fill,
         ),
       ),
     );
@@ -30,16 +30,13 @@ class LandingPage extends StatelessWidget {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             color: Colors.white,
-            fontSize: 30.0,
+            fontSize: 25.0,
           ),
         ),
         Text(
           AppConfig.appTagline,
           style: TextStyle(
-            color: Colors.white,
-            fontSize: 18.0,
-            fontWeight: FontWeight.w500
-          ),
+              color: Colors.white, fontSize: 18.0, fontWeight: FontWeight.w500),
         )
       ],
     );
@@ -56,7 +53,7 @@ class LandingPage extends StatelessWidget {
         ),
         child: Center(
           child: Text(
-            'LOG IN',
+            'INCIAR SESION',
             style: TextStyle(
               fontWeight: FontWeight.w600,
               fontSize: 20.0,
@@ -83,7 +80,7 @@ class LandingPage extends StatelessWidget {
           borderRadius: new BorderRadius.circular(7.0),
         ),
         child: Text(
-          'SIGN UP',
+          'CREAR CUENTA',
           style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 20.0,
